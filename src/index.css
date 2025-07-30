@@ -43,10 +43,40 @@ All colors MUST be HSL.
     --accent-gradient: linear-gradient(90deg, hsl(263 70% 50%), hsl(280 70% 60%));
     --text-gradient: linear-gradient(135deg, hsl(263 70% 65%), hsl(280 70% 75%));
     
+    /* Section-specific colors */
+    --contact-primary: 200 100% 60%;
+    --contact-secondary: 200 80% 90%;
+    --contact-gradient: linear-gradient(135deg, hsl(200 100% 60%), hsl(220 90% 70%));
+    
+    --education-primary: 280 100% 60%;
+    --education-secondary: 280 80% 90%;
+    --education-gradient: linear-gradient(135deg, hsl(280 100% 60%), hsl(300 90% 70%));
+    
+    --experience-primary: 120 70% 50%;
+    --experience-secondary: 120 60% 85%;
+    --experience-gradient: linear-gradient(135deg, hsl(120 70% 50%), hsl(140 80% 60%));
+    
+    --skills-primary: 45 100% 60%;
+    --skills-secondary: 45 90% 85%;
+    --skills-gradient: linear-gradient(135deg, hsl(45 100% 60%), hsl(60 90% 70%));
+    
+    --achievements-primary: 20 100% 60%;
+    --achievements-secondary: 20 90% 85%;
+    --achievements-gradient: linear-gradient(135deg, hsl(20 100% 60%), hsl(40 90% 70%));
+    
+    --projects-primary: 320 70% 60%;
+    --projects-secondary: 320 60% 85%;
+    --projects-gradient: linear-gradient(135deg, hsl(320 70% 60%), hsl(340 80% 70%));
+    
+    --personal-primary: 160 70% 50%;
+    --personal-secondary: 160 60% 85%;
+    --personal-gradient: linear-gradient(135deg, hsl(160 70% 50%), hsl(180 80% 60%));
+    
     /* Shadows */
     --shadow-elegant: 0 25px 50px -12px hsl(263 70% 50% / 0.25);
     --shadow-card: 0 10px 15px -3px hsl(240 10% 3.9% / 0.1), 0 4px 6px -2px hsl(240 10% 3.9% / 0.05);
     --shadow-glow: 0 0 50px hsl(263 70% 50% / 0.3);
+    --shadow-colored: 0 10px 25px -5px;
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

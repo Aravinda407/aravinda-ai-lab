@@ -62,6 +62,34 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				contact: {
+					primary: 'hsl(var(--contact-primary))',
+					secondary: 'hsl(var(--contact-secondary))'
+				},
+				education: {
+					primary: 'hsl(var(--education-primary))',
+					secondary: 'hsl(var(--education-secondary))'
+				},
+				experience: {
+					primary: 'hsl(var(--experience-primary))',
+					secondary: 'hsl(var(--experience-secondary))'
+				},
+				skills: {
+					primary: 'hsl(var(--skills-primary))',
+					secondary: 'hsl(var(--skills-secondary))'
+				},
+				achievements: {
+					primary: 'hsl(var(--achievements-primary))',
+					secondary: 'hsl(var(--achievements-secondary))'
+				},
+				projects: {
+					primary: 'hsl(var(--projects-primary))',
+					secondary: 'hsl(var(--projects-secondary))'
+				},
+				personal: {
+					primary: 'hsl(var(--personal-primary))',
+					secondary: 'hsl(var(--personal-secondary))'
 				}
 			},
 			borderRadius: {
@@ -110,9 +138,16 @@ export default {
 				'hero-gradient': 'var(--hero-gradient)',
 				'card-gradient': 'var(--card-gradient)',
 				'accent-gradient': 'var(--accent-gradient)',
-				'text-gradient': 'var(--text-gradient)'
-			}
+				'text-gradient': 'var(--text-gradient)',
+				'contact-gradient': 'var(--contact-gradient)',
+				'education-gradient': 'var(--education-gradient)',
+				'experience-gradient': 'var(--experience-gradient)',
+				'skills-gradient': 'var(--skills-gradient)',
+				'achievements-gradient': 'var(--achievements-gradient)',
+				'projects-gradient': 'var(--projects-gradient)',
+				'personal-gradient': 'var(--personal-gradient)'
 		}
+	},
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;

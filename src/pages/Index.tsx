@@ -113,34 +113,35 @@ const Index = () => {
       <div className="max-w-7xl mx-auto px-4 py-16 space-y-16">
         {/* Contact Information */}
         <section className="animate-slide-up">
-          <Card className="bg-card-gradient border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-2 text-primary">
+          <Card className="bg-card-gradient border-contact-primary/20 shadow-lg relative overflow-hidden">
+            <div className="absolute inset-0 bg-contact-gradient opacity-5"></div>
+            <CardHeader className="relative">
+              <CardTitle className="text-2xl flex items-center gap-2 text-contact-primary">
                 <User className="h-6 w-6" />
                 Contact Information
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="relative">
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Phone className="h-5 w-5 text-primary" />
+                <div className="flex items-center gap-2 text-muted-foreground hover:text-contact-primary transition-colors">
+                  <Phone className="h-5 w-5 text-contact-primary" />
                   <span>7671947414</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Mail className="h-5 w-5 text-primary" />
+                <div className="flex items-center gap-2 text-muted-foreground hover:text-contact-primary transition-colors">
+                  <Mail className="h-5 w-5 text-contact-primary" />
                   <span>aravindagoreti407@gmail.com</span>
                 </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <MapPin className="h-5 w-5 text-primary" />
+                <div className="flex items-center gap-2 text-muted-foreground hover:text-contact-primary transition-colors">
+                  <MapPin className="h-5 w-5 text-contact-primary" />
                   <span>Hyderabad, Telangana</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
-                  <Linkedin className="h-5 w-5 text-primary" />
+                  <Linkedin className="h-5 w-5 text-contact-primary" />
                   <a 
                     href="https://www.linkedin.com/in/goreti-aravind-02b2a9234/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="hover:text-primary transition-colors"
+                    className="hover:text-contact-primary transition-colors"
                   >
                     LinkedIn Profile
                   </a>
@@ -152,30 +153,31 @@ const Index = () => {
 
         {/* Education */}
         <section className="animate-slide-up">
-          <Card className="bg-card-gradient border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-2 text-primary">
+          <Card className="bg-card-gradient border-education-primary/20 shadow-lg relative overflow-hidden">
+            <div className="absolute inset-0 bg-education-gradient opacity-5"></div>
+            <CardHeader className="relative">
+              <CardTitle className="text-2xl flex items-center gap-2 text-education-primary">
                 <GraduationCap className="h-6 w-6" />
                 Education
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="border-l-2 border-primary/30 pl-4 space-y-3">
+            <CardContent className="relative space-y-4">
+              <div className="border-l-2 border-education-primary/30 pl-4 space-y-3">
                 <div>
-                  <h3 className="font-semibold text-lg">M.Tech in Artificial Intelligence and Machine Learning</h3>
-                  <p className="text-muted-foreground">Osmania University</p>
+                  <h3 className="font-semibold text-lg text-foreground">M.Tech in Artificial Intelligence and Machine Learning</h3>
+                  <p className="text-education-primary/80 font-medium">Osmania University</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">B.Tech in Computer Science Engineering</h3>
-                  <p className="text-muted-foreground">Kodad Institute of Technology and Science</p>
+                  <h3 className="font-semibold text-lg text-foreground">B.Tech in Computer Science Engineering</h3>
+                  <p className="text-education-primary/80 font-medium">Kodad Institute of Technology and Science</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold">Intermediate</h3>
-                  <p className="text-muted-foreground">TSWRS/JC</p>
+                  <h3 className="font-semibold text-foreground">Intermediate</h3>
+                  <p className="text-education-primary/80 font-medium">TSWRS/JC</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold">School</h3>
-                  <p className="text-muted-foreground">TSWR(RPRP)</p>
+                  <h3 className="font-semibold text-foreground">School</h3>
+                  <p className="text-education-primary/80 font-medium">TSWR(RPRP)</p>
                 </div>
               </div>
             </CardContent>
@@ -184,23 +186,24 @@ const Index = () => {
 
         {/* Experience */}
         <section className="animate-slide-up">
-          <Card className="bg-card-gradient border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-2 text-primary">
+          <Card className="bg-card-gradient border-experience-primary/20 shadow-lg relative overflow-hidden">
+            <div className="absolute inset-0 bg-experience-gradient opacity-5"></div>
+            <CardHeader className="relative">
+              <CardTitle className="text-2xl flex items-center gap-2 text-experience-primary">
                 <Briefcase className="h-6 w-6" />
                 Professional Experience
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="border-l-2 border-primary/30 pl-4 space-y-3">
+            <CardContent className="relative space-y-4">
+              <div className="border-l-2 border-experience-primary/30 pl-4 space-y-3">
                 <div>
-                  <h3 className="font-semibold text-lg">Intern</h3>
-                  <p className="text-primary font-medium">COSMIC365.AI</p>
+                  <h3 className="font-semibold text-lg text-foreground">Intern</h3>
+                  <p className="text-experience-primary font-medium">COSMIC365.AI</p>
                   <p className="text-muted-foreground">Gained hands-on experience in AI and machine learning technologies</p>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg">Customer Relationship Manager (CRM) Officer</h3>
-                  <p className="text-primary font-medium">HDFC Bank</p>
+                  <h3 className="font-semibold text-lg text-foreground">Customer Relationship Manager (CRM) Officer</h3>
+                  <p className="text-experience-primary font-medium">HDFC Bank</p>
                   <p className="text-muted-foreground">6+ months experience in customer service and relationship management</p>
                 </div>
               </div>
@@ -210,29 +213,37 @@ const Index = () => {
 
         {/* Skills */}
         <section className="animate-slide-up">
-          <Card className="bg-card-gradient border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-2 text-primary">
+          <Card className="bg-card-gradient border-skills-primary/20 shadow-lg relative overflow-hidden">
+            <div className="absolute inset-0 bg-skills-gradient opacity-5"></div>
+            <CardHeader className="relative">
+              <CardTitle className="text-2xl flex items-center gap-2 text-skills-primary">
                 <Code className="h-6 w-6" />
                 Skills & Proficiencies
               </CardTitle>
             </CardHeader>
-            <CardContent className="space-y-6">
+            <CardContent className="relative space-y-6">
               <div>
-                <h3 className="font-semibold text-lg mb-3">Technical Skills</h3>
+                <h3 className="font-semibold text-lg mb-3 text-foreground">Technical Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.technical.map((skill, index) => (
-                    <Badge key={index} variant="secondary" className="bg-accent-gradient text-white border-none">
+                    <Badge 
+                      key={index} 
+                      className="bg-skills-gradient text-white border-none hover:scale-105 transition-transform"
+                    >
                       {skill}
                     </Badge>
                   ))}
                 </div>
               </div>
               <div>
-                <h3 className="font-semibold text-lg mb-3">Non-Technical Skills</h3>
+                <h3 className="font-semibold text-lg mb-3 text-foreground">Non-Technical Skills</h3>
                 <div className="flex flex-wrap gap-2">
                   {skills.nonTechnical.map((skill, index) => (
-                    <Badge key={index} variant="outline" className="border-primary/30 text-foreground">
+                    <Badge 
+                      key={index} 
+                      variant="outline" 
+                      className="border-skills-primary/30 text-skills-primary hover:bg-skills-primary/10 transition-colors"
+                    >
                       {skill}
                     </Badge>
                   ))}
@@ -244,18 +255,19 @@ const Index = () => {
 
         {/* Achievements */}
         <section className="animate-slide-up">
-          <Card className="bg-card-gradient border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-2 text-primary">
+          <Card className="bg-card-gradient border-achievements-primary/20 shadow-lg relative overflow-hidden">
+            <div className="absolute inset-0 bg-achievements-gradient opacity-5"></div>
+            <CardHeader className="relative">
+              <CardTitle className="text-2xl flex items-center gap-2 text-achievements-primary">
                 <Award className="h-6 w-6" />
                 Achievements & Certifications
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="relative">
               <div className="space-y-3">
                 {achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <Award className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                  <div key={index} className="flex items-start gap-3 p-3 rounded-lg hover:bg-achievements-primary/5 transition-colors">
+                    <Award className="h-5 w-5 text-achievements-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{achievement}</span>
                   </div>
                 ))}
@@ -267,7 +279,7 @@ const Index = () => {
         {/* Projects */}
         <section className="animate-slide-up">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-4">Featured Projects</h2>
+            <h2 className="text-3xl font-bold text-projects-primary mb-4">Featured Projects</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               A showcase of innovative projects spanning AI/ML, web development, and IoT solutions
             </p>
@@ -277,24 +289,25 @@ const Index = () => {
             {projects.map((project, index) => (
               <Card 
                 key={index} 
-                className="bg-card-gradient border-border/50 shadow-card hover:shadow-lg transition-all duration-300 group hover:-translate-y-2"
+                className="bg-card-gradient border-projects-primary/20 shadow-lg hover:shadow-xl transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden"
               >
-                <CardHeader>
-                  <CardTitle className="text-lg group-hover:text-primary transition-colors">
+                <div className="absolute inset-0 bg-projects-gradient opacity-5"></div>
+                <CardHeader className="relative">
+                  <CardTitle className="text-lg group-hover:text-projects-primary transition-colors">
                     {project.title}
                   </CardTitle>
                   <CardDescription className="text-muted-foreground leading-relaxed">
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="relative">
                   <div className="space-y-4">
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
                         <Badge 
                           key={techIndex} 
                           variant="outline" 
-                          className="text-xs border-primary/30 text-foreground"
+                          className="text-xs border-projects-primary/30 text-projects-primary hover:bg-projects-primary/10 transition-colors"
                         >
                           {tech}
                         </Badge>
@@ -304,7 +317,7 @@ const Index = () => {
                       <Button 
                         variant="outline" 
                         size="sm" 
-                        className="w-full border-primary/30 hover:bg-primary/10 transition-colors"
+                        className="w-full border-projects-primary/30 hover:bg-projects-primary/10 text-projects-primary transition-colors"
                         asChild
                       >
                         <a 
@@ -328,33 +341,34 @@ const Index = () => {
 
         {/* Personal Information */}
         <section className="animate-slide-up">
-          <Card className="bg-card-gradient border-border/50 shadow-card">
-            <CardHeader>
-              <CardTitle className="text-2xl flex items-center gap-2 text-primary">
+          <Card className="bg-card-gradient border-personal-primary/20 shadow-lg relative overflow-hidden">
+            <div className="absolute inset-0 bg-personal-gradient opacity-5"></div>
+            <CardHeader className="relative">
+              <CardTitle className="text-2xl flex items-center gap-2 text-personal-primary">
                 <User className="h-6 w-6" />
                 Personal Information
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="relative">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-3">
-                  <div>
-                    <span className="font-semibold">Date of Birth:</span>
-                    <span className="ml-2 text-muted-foreground">02/08/2001</span>
+                  <div className="p-3 rounded-lg hover:bg-personal-primary/5 transition-colors">
+                    <span className="font-semibold text-foreground">Date of Birth:</span>
+                    <span className="ml-2 text-personal-primary">02/08/2001</span>
                   </div>
-                  <div>
-                    <span className="font-semibold">Languages:</span>
-                    <span className="ml-2 text-muted-foreground">English, Telugu, Hindi</span>
+                  <div className="p-3 rounded-lg hover:bg-personal-primary/5 transition-colors">
+                    <span className="font-semibold text-foreground">Languages:</span>
+                    <span className="ml-2 text-personal-primary">English, Telugu, Hindi</span>
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <div>
-                    <span className="font-semibold">Hobbies:</span>
-                    <span className="ml-2 text-muted-foreground">Reading Books, Art, Learning Interesting Facts</span>
+                  <div className="p-3 rounded-lg hover:bg-personal-primary/5 transition-colors">
+                    <span className="font-semibold text-foreground">Hobbies:</span>
+                    <span className="ml-2 text-personal-primary">Reading Books, Art, Learning Interesting Facts</span>
                   </div>
-                  <div>
-                    <span className="font-semibold">Additional Skills:</span>
-                    <span className="ml-2 text-muted-foreground">Writing, Research, Communication</span>
+                  <div className="p-3 rounded-lg hover:bg-personal-primary/5 transition-colors">
+                    <span className="font-semibold text-foreground">Additional Skills:</span>
+                    <span className="ml-2 text-personal-primary">Writing, Research, Communication</span>
                   </div>
                 </div>
               </div>
