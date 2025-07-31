@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Github, Linkedin, ExternalLink, Award, GraduationCap, Briefcase, Code, User } from "lucide-react";
+const profilePhoto = "/lovable-uploads/e939111b-0be9-4319-8d70-84951f25462c.png";
 
 const Index = () => {
   const projects = [
@@ -73,6 +74,16 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="animate-slide-up">
+            <div className="mb-8 flex justify-center">
+              <div className="relative">
+                <img 
+                  src={profilePhoto} 
+                  alt="Goreti Aravinda" 
+                  className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white/20 shadow-2xl object-cover animate-float"
+                />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-transparent"></div>
+              </div>
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-float">
               Goreti Aravinda
             </h1>
@@ -196,6 +207,12 @@ const Index = () => {
             </CardHeader>
             <CardContent className="relative space-y-4">
               <div className="border-l-2 border-experience-primary/30 pl-4 space-y-3">
+                <div>
+                  <h3 className="font-semibold text-lg text-foreground">Software Development Faculty</h3>
+                  <p className="text-experience-primary font-medium">NXTWAVE</p>
+                  <p className="text-muted-foreground text-sm">May 2nd, 2025 - Present</p>
+                  <p className="text-muted-foreground">Teaching and mentoring students in software development technologies and best practices</p>
+                </div>
                 <div>
                   <h3 className="font-semibold text-lg text-foreground">Intern</h3>
                   <p className="text-experience-primary font-medium">COSMIC365.AI</p>
